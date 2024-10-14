@@ -1,5 +1,12 @@
 
-__all__ = ['my_sum']
+__all__ = ['my_sum', "factorial"]
+
+from functools import cache
+
+
+@cache
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n - 1)
 
 
 def my_sum(iterable):
