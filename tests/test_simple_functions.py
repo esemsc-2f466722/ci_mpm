@@ -10,7 +10,7 @@ class TestSimpleFunctions(object):
         ([8, 7, 5], 20),
         ((10, -2, 5, -10, 1), 4)
     ])
-    @pytest.mark.parametrize('iterable, expected', [
+    @pytest.mark.parametrize('number, expected', [
         (5, 120),
         (3, 6),
         (1, 1)
